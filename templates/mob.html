@@ -1,0 +1,32 @@
+{%load static%}
+{%block content%}
+<!DOCTYPE html>
+<html> 
+    <title>
+        Login
+    </title>
+<head>
+   
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/style.css' %}"> -->
+  
+   
+</head>
+      <!-- Content-->
+      <div>
+
+        <div class="lg:p-12 max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
+            <form class="" action="" method="post">
+                {% csrf_token %}
+                <div class="" style="text-align: center;">
+                  Mobile number <input type="number" name="mobile" value="">
+                </div>
+                  
+                <input type="submit" name="submit" value="generateotp">
+              </form>
+        
+      </div>
+        
+ 
+      </html>
+
+{%endblock%}
