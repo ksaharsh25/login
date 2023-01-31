@@ -22,7 +22,7 @@ from demo.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('demo/',include('demo.urls')),
-    # path('logingen/',Logingeneric.as_view()),
+    path('logingen/',Logingeneric.as_view()),
     path('api/',include('rest_framework.urls', namespace='rest_framework')),
-    # path('logingen/<id>',LoginGeneric.as_view()),
+    path('logingen/<id>',LoginGeneric.as_view()),
 ]

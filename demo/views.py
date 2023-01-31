@@ -2,21 +2,21 @@ from django.shortcuts import render,redirect
 from .models import *
 from django.http import HttpResponse,Http404
 # Create your views here.
-# from rest_framework import generics
-# from rest_framework.views import APIView
-# from .serializers import *
+from rest_framework import generics
+from rest_framework.views import APIView
+from .serializers import *
 import random 
 
-# class Logingeneric(generics.ListAPIView,generics.CreateAPIView):
-#     queryset=Login.objects.all()
-#     serializer_class = DemoSerializer
+class Logingeneric(generics.ListAPIView,generics.CreateAPIView):
+    queryset=Login.objects.all()
+    serializer_class = DemoSerializer
 
         
 
-# class LoginGeneric(generics.UpdateAPIView,generics.DestroyAPIView):
-#     queryset=Login.objects.all()
-#     serializer_class = DemoSerializer
-#     lookup_field='id'
+class LoginGeneric(generics.UpdateAPIView,generics.DestroyAPIView):
+    queryset=Login.objects.all()
+    serializer_class = DemoSerializer
+    lookup_field='id'
 
 
 def http(request):

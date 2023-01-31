@@ -8,3 +8,5 @@ class Login(models.Model):
 class Mobile(models.Model):
     mobile=models.IntegerField(max_length=10,blank=True,null=True) 
     otp=models.IntegerField(max_length=10,blank=True,null=True)    
+
+    

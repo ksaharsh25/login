@@ -5,3 +5,5 @@ from .models import *
 class LoginAdmin(admin.ModelAdmin):
     list_display=['email','password']
     search_fields=['email','password']
+
+    
